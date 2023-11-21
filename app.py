@@ -1,6 +1,7 @@
 class Calculator:
-    @staticmethod
-    def add(x, y):
+    def __init__(self) -> None:
+        self.result=0
+    def add(self,x, y):
         """Add two numbers.
 
         Args:
@@ -10,10 +11,10 @@ class Calculator:
         Returns:
             float: The result of the addition.
         """
-        return x + y
+        self.result=x+y
+        return self.result
 
-    @staticmethod
-    def subtract(x, y):
+    def subtract(self,x, y):
         """Subtract y from x.
 
         Args:
@@ -23,10 +24,10 @@ class Calculator:
         Returns:
             float: The result of the subtraction.
         """
-        return x - y
+        self.result=x-y
+        return self.result
 
-    @staticmethod
-    def multiply(x, y):
+    def multiply(self,x, y):
         """Multiply two numbers.
 
         Args:
@@ -35,11 +36,13 @@ class Calculator:
 
         Returns:
             float: The result of the multiplication.
+
         """
+        self.result=x*y
         return x * y
 
-    @staticmethod
-    def divide(x, y):
+
+    def divide(self,x, y):
         """Divide x by y.
 
         Args:
@@ -53,9 +56,9 @@ class Calculator:
             ValueError: If y is zero.
         """
         if y == 0:       
-            return x / y
-
-        raise ValueError("Cannot divide by zero")
+            return("Cannot divide by zero")
+        self.result==x/y
+        return self.result
 
 
 

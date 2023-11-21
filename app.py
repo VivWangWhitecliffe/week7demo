@@ -57,7 +57,7 @@ class Calculator:
         """
         if y == 0:       
             return("Cannot divide by zero")
-        self.result==x/y
+        self.result=x/y
         return self.result
 
 
